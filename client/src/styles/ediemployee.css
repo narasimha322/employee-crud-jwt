@@ -1,0 +1,94 @@
+/* General styling for the edit employee container */
+.edit-employee {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form on the page */
+  }
+  
+  /* Title styling */
+  .edit-employee h2 {
+    font-size: 1.8rem; /* Slightly smaller font size */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between form fields */
+  }
+  
+  /* Input styling */
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Ensures inputs fill the form container but not the entire page */
+    box-sizing: border-box; /* Makes padding and border included in width */
+  }
+  
+  /* Focus styling for input */
+  input:focus {
+    border-color: #28a745;
+  }
+  
+  /* Disabled input styling */
+  input[disabled] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+  
+  /* Submit button styling */
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Makes button fill the width of the form */
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Loader (loading) styling */
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .edit-employee {
+      padding: 15px;
+    }
+  
+    input,
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  

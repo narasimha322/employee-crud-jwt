@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000B58;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo i {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+  
+  .navbar .logo h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-left: 20px;
+  }
+  
+  .navbar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  /* Body Content */
+  .body-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  body p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Action Section */
+  .action-section {
+    margin-top: 20px;
+  }
+  
+  .action-section button {
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-section button:first-of-type {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .action-section button:first-of-type:hover {
+    background-color: #0056b3;
+  }
+  
+  .action-section button:last-of-type {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .action-section button:last-of-type:hover {
+    background-color: #218838;
+  }
+  
+  /* Hover Effects */
+  button:hover {
+    transform: translateY(-2px);
+  }
+  

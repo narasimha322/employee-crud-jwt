@@ -1,0 +1,185 @@
+/* General container for employee list */
+.employee-list {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1500px; /* Increase width */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Title styling */
+  .employee-list h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+ 
+  
+  /* Button container for action buttons (Add Employee, Logout) */
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Spread buttons: one left, one right */
+    align-items: center; /* Align buttons vertically in the center */
+    margin-bottom: 20px;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* General button styling */
+  .btn {
+    padding: 8px 16px; /* Adjust button padding */
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Button width auto to prevent excessive width */
+  }
+  
+  /* Add Employee button */
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Logout button */
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Styling for the employee table */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px; /* Reduced header padding */
+    text-align: left;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Table cell styling */
+  td {
+    padding: 12px;
+    text-align: left;
+    font-size: 0.85rem;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  /* Hover effect for table rows */
+  tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Action button styling inside the table */
+  table td button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  /* Edit button styling */
+  .btn-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Delete button styling */
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Loading message styling */
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Styling when no employees are found */
+  p.no-employees {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .employee-list {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  
+    .btn-warning,
+    .btn-danger {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
