@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const pool = require("../db.js");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcryptjs"); // Using bcryptjs instead of bcrypt
 const jwtGenerator = require("../utils/jwtGenerator.js");
 const validinfo = require("../middleware/validinfo.js");
 const authorization = require("../middleware/authorization.js"); // Include authorization middleware
@@ -18,8 +18,7 @@ router.post("/register", validinfo, async (req, res) => {
     }
 
     // Hash password with salt
-    const saltRound = 10;
-    const salt = await bcrypt.genSalt(saltRound);
+    const salt = await bcrypt.genSalt(10);
     const bcryptPassword = await bcrypt.hash(password, salt);
 
     // Insert new user into database
@@ -30,7 +29,7 @@ router.post("/register", validinfo, async (req, res) => {
 
     // Generate JWT token for the newly created user
     const token = jwtGenerator(newUser.rows[0].id);
-    
+
     // Send the generated token as a response
     res.json({ token });
   } catch (error) {
@@ -62,7 +61,7 @@ router.post("/login", validinfo, async (req, res) => {
   }
 });
 
-// Token Verification Route (this is the one you're asking about)
+// Token Verification Route
 router.get("/is-verify", authorization, async (req, res) => {
   try {
     // If we get here, that means the token is valid
