@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const pool = require("../db.js");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwtGenerator = require("../utils/jwtGenerator.js");
 const validinfo = require("../middleware/validinfo.js");
 const authorization = require("../middleware/authorization.js"); // Include authorization middleware
